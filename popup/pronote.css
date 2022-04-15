@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    width: 300px;
+    background-color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    border-radius: 3px;
+    box-shadow: 1px 1.7px 0 1.5px #f60;
+}
+
+#pronotheme {
+    margin-top: 15px !important;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: max-content;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 200ms, color 200ms;
+}
+
+.darkNano {
+    background-color: #262626;
+    color: #eeeeee;
+}
+
+.lightNano {
+    background-color: #eeeeee;
+    color: #262626;
+    box-shadow: 1px 1px 12px #cacaca;
+}
+
+#autologger {
+    margin-top: 15px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 19px;
+    vertical-align: middle;
+    user-select: none;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+input[type=checkbox] {
+    width: 23px;
+    height: 23px;
+    margin-top: 0;
+    margin-right: 10px;
+    border-radius: 5px;
+ }
+
+ input[type=checkbox]:checked ~ .loginfo {
+    display: block;
+ }
+
+ .loginfo {
+    display: none;
+    width: 230px;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 15px;
+ }
+
+#save {
+    margin-top: 8px !important;
+    background-color: #ddd;
+    text-align: center;
+    padding: 5px 10px;
+    margin: auto;
+    width: max-content;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+}
+/* .pronotheme {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: max-content;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 200ms, color 200ms;
+}
+
+
+.darkPronote {
+    background-color: #262626;
+    color: #eeeeee;
+}
+
+.lightPronote {
+    background-color: #eeeeee;
+    color: #262626;
+    box-shadow: 1px 1px 12px #cacaca;
+} */
