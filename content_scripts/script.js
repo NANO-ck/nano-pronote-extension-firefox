@@ -34,7 +34,7 @@ const loginter = setInterval(() => {
         clearInterval(loginter)
         const c = getCookie("login_ext") ? JSON.parse(getCookie("login_ext")) : false
         if(!c || c.enabled == false) {
-            document.getElementById("id_14").children[1].children[0].innerHTML = 'Espace Élèves<div class="Texte10"></br>Avec l\'extension NANO pronote,</br>vous pouvez vous connectez automatiquement</div><div class=\"Image_EspaceEtudiants_Connexion\" style=\"margin:20px auto;\"></div><div class=\"Image_SeparateurConnexion\"></div>'
+            document.getElementById("id_14").children[0].innerHTML = '<h2>Espace Élèves</h2><div class="Texte10"></br>Avec l\'extension NANO pronote,</br>vous pouvez vous connectez automatiquement</div><div class="Icone_EspaceEtudiant"></div>'
         } else if(c.enabled == true) {
             document.getElementById("id_22").value = c.user
             document.getElementById("id_22").dispatchEvent(new Event("input"))
@@ -58,6 +58,9 @@ setInterval(() => { // Every minute, we check if the user is still connected
     try {
         document.getElementsByClassName("ibe_etab").click() // We stimulate the page to make sure it's really connected
         document.getElementsByClassName("ibe_etab").dispatchEvent(new Event("click"))
+        // We try to scroll up and down
+        document.getElementById("GInterface_T").scrollTo(0, 0)
+        document.getElementById("GInterface_T").scrollTo(0, 100)
     } catch (e) {}
     if(document.getElementById("GInterface_T")) return; // If the user is still logged in, we won't execute the following script
     if(!document.getElementById("id_14")) return window.location.reload() // Reloads the page if user is logged out and we're not on the login page (when it displays "Déconnecté")

@@ -62,8 +62,12 @@ img, .Image_Logo_PronoteBarreHaut, [class^="Image"], [class*=" Image"],
     
 }
 
-.objetbandeauentete_global .objetBandeauEntete_menu:not(.ongletLudique) {
-    background-color: white;
+.objetBandeauEntete_menu {
+    background-color: white !important;
+}
+
+.label-menu_niveau0, .btnImageIcon {
+    color: rgb(44, 44, 44) !important;
 }
 
 .ObjetBandeauEspace .ibe_iconebtn:hover > i, .ObjetBandeauEspace .ibe_iconebtn:focus > i {
